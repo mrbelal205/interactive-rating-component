@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="interactive-rating-component" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>interactive Rating Component</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="rating">
+          <div class="star">
+            <span><img src="./imgs/icon-star.svg" alt="star" /></span>
+          </div>
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="rate-select">
+            <span id="one" data-select="1">1</span>
+            <span id="two" data-select="2">2</span>
+            <span id="three" data-select="3">3</span>
+            <span id="four" data-select="4">4</span>
+            <span id="five" data-select="5">5</span>
+          </div>
+          <button type="submit">SUBMIT</button>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  user-select: none;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+.container .rating {
+  background-color: hsl(215, 22%, 15%);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 340px;
+  max-width: 425px;
+  min-height: 340px;
+  max-height: 425px;
+  border-radius: 25px;
+  padding: 30px 40px;
+}
+.container .rating .star {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.container .rating h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.container .rating p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 30px;
+}
+.container .rating .rate-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .rating .rate-select span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 424px) {
+  .container .rating .rate-select span {
+    width: 40px;
+    height: 40px;
+  }
+}
+.container .rating .rate-select span:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.container .rating .rate-select span.selected {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.container .rating button {
+  display: block;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.3s;
+}
+.container .rating button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+/* Sucess */
+.container .rating-sucess {
+  background-color: hsl(215, 22%, 15%);
+  min-width: 340px;
+  max-width: 425px;
+  min-height: 340px;
+  max-height: 425px;
+  border-radius: 25px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .sucessimg {
+  margin-bottom: 30px;
+}
+.container .sucesspone {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.container .sucessh2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.container .sucessptwo {
+  text-align: center;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 30px;
+}
